@@ -85,7 +85,7 @@ Vagrant.configure("2") do |config|
      cd /opt
      sudo mkdir nginxproxymanager
      cd nginxproxymanager
-     curl -L https://raw.githubusercontent.com/clickonrefresh/nginxproxymanager/main/docker-compose.yaml -o docker-compose.yaml
+     curl -L https://raw.githubusercontent.com/clickonrefresh/VagrantPortfolioDeploy/main/dockerconfigs/admin/nginxproxymanager/docker-compose.yaml -o docker-compose.yaml
      docker-compose up -d
      cd ..
      
@@ -94,7 +94,7 @@ Vagrant.configure("2") do |config|
      
      sudo apt install zip -y
      sudo mkdir ./noip && cd noip
-     sudo wget https://github.com/Neill-H/Automate-Noip-DUC/archive/main.zip
+     sudo wget https://github.com/clickonrefresh/Automate-Noip-DUC/archive/main.zip
      sudo unzip main.zip
      cd Automate-Noip-DUC-main
      sudo bash noip-duc.sh
