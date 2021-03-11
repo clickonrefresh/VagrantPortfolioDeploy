@@ -119,3 +119,7 @@ ________________________
 
  - Portainer is deployed to manage the entire docker swarm.
 
+---------------------------------------------------------------------
+
+The easiest way to configure database and application password in the yaml files is to fork this project, and alter the configurations to your liking.
+Alternatively you will need to alter the configurations after deploying and re-run the containers.
