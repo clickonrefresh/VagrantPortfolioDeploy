@@ -15,7 +15,7 @@
       - Cockpit
 
     - Productivity Apps
-      - Odoo Community Edition
+      - Odoo Community Edition - (with Python-Pandas configured to accomodate 3rd Party Applications)
       - Visual Studio Code
       - Organizr
       - Bookstack
