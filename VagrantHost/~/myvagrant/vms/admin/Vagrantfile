@@ -85,7 +85,7 @@ Vagrant.configure("2") do |config|
      cd /opt
      sudo mkdir /nginx
      cd nginx
-     sudo wget https://github.com/clickonrefresh/nginxproxymanager/archive/main.zip
+     >>>>>>>> reenter here  >>>>>sudo curl -L https://raw.github.com/clickonrefresh/dockerconfigs/admin/nginxproxymanager/docker-compose.yaml -o docker-compose.yaml
      sudo unzip main.zip
      cd nginxproxymanager
      docker-compose up -d
