@@ -100,5 +100,5 @@ Vagrant.configure("2") do |config|
      cd Automate-Noip-DUC-main
      sudo bash noip-duc.sh
      exit
-  # SHELL
+   SHELL
 end
