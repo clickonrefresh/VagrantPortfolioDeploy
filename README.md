@@ -62,13 +62,9 @@
 ##### The noip script will be downloaded during this deployment, you will need to ssh into each machine individually and run their respective noip.com DUC scripts:
 
 ```
-```
-```
-    vagrant ssh
-    cd /opt/noip/Automate-Noip-DUC-main
-    sudo bash main.sh
-```
-```
+vagrant ssh
+cd /opt/noip/Automate-Noip-DUC-main
+sudo bash main.sh
 ```
 -------------------
 
