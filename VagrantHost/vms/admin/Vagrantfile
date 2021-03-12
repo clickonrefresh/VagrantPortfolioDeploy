@@ -95,6 +95,6 @@
      sudo unzip main.zip
      cd Automate-Noip-DUC-main
      sudo bash noip-duc.sh
-     exit
+     
    SHELL
 end
