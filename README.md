@@ -1,6 +1,4 @@
 
-https://user-images.githubusercontent.com/72121107/110903658-71fc2f00-8310-11eb-9df9-c2f019c4ce16.mp4
-
 # !!! WARNING!!!!THIS SCRIPT IS IN TESTING PHASE !!! ** USE AT OWN RISK **
 --------------------------------------------------------------
 # Disruptive Portfolio & Business Management Suite
