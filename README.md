@@ -81,19 +81,19 @@ This script will download Vagrant, initiate 3 virtual machines each with a uniqu
 
 _______________________
 ### To run this script:
-----------------------
+
 
 ``` mkdir ~/myvagrantprojects ```
 
 ``` cd ~/myvagrantprojects ```
 
-``` git clone https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite.git
+``` git clone https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite.git ```
 
 ``` cd DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/ ```
 
 ``` bash main.sh ```
----------------------------------------------------------------------------------------------------------------------
 
+________________________
 
 ----------------------------------------------------------------------------------
 #### The script will run, deploying virtualbox and vagrant, then initiate the virtual machines with their own unique set of install scripts:
