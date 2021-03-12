@@ -87,6 +87,8 @@ _______________________
 
 ``` sudo unzip main.zip ```
 
+``` cd VagrantPortfolioDeploy-main ```
+
 ``` sudo bash VagrantHost/main.sh ```
 ___________________________________
 
