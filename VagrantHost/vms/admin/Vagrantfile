@@ -76,7 +76,6 @@
      sudo chmod +x /usr/local/bin/docker-compose
      sudo apt-get update
      sudo apt-get install cockpit -y
-     sudo apt-get install cockpit-machines -y
      cd /opt
      sudo mkdir nginxproxymanager
      cd nginxproxymanager
