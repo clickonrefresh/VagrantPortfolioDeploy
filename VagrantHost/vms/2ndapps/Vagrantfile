@@ -84,7 +84,7 @@ Vagrant.configure("2") do |config|
      sudo mkdir teleport
      cd teleport
      sudo curl -Lso teleport-quickstart.yml https://raw.githubusercontent.com/gravitational/teleport/master/docker/teleport-quickstart.yml
-     docker-compose -f teleport-quickstart.yml up
+     sudo docker-compose -f teleport-quickstart.yml up
      
      cd /opt
      sudo mkdir vscodeserver
