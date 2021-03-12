@@ -93,11 +93,11 @@ _______________________
 
 ``` cd myproject ```
 
-``` sudo wget https://github.com/clickonrefresh/VagrantPortfolioDeploy/archive/main.zip ```
+``` sudo wget https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/archive/main.zip ```
 
 ``` sudo unzip main.zip ```
 
-``` cd VagrantPortfolioDeploy-main/VagrantHost/ ```
+``` cd DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/ ```
 
 ``` sudo bash main.sh ```
 ___________________________________
