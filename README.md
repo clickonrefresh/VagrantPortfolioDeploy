@@ -55,9 +55,22 @@
     - 16 G Available RAM
     - 100 G Available disk Space
 
+
+---------------------
 ### You will need 9 Domain Names / Sub-Domain Names if you wish to access all of your apps over SSL
 
------------------------------------------------------------------------
+##### The noip script will be downloaded during this deployment, you will need to ssh into each machine individually and run their respective noip.com DUC scripts:
+
+```
+```
+```
+    vagrant ssh
+    cd /opt/noip/Automate-Noip-DUC-main
+    sudo bash main.sh
+```
+```
+```
+-------------------
 
 -----------------------------------------------------------------------
 
