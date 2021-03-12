@@ -76,28 +76,28 @@ Vagrant.configure("2") do |config|
      sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
      sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
      sudo apt-get update
-     sudo apt-get install docker-ce -y
-     sduo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+     sudo apt install docker-ce -y
+     sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
      sudo chmod +x /usr/local/bin/docker-compose
-     y
+     
      cd /opt
      sudo mkdir teleport
      cd teleport
      sudo curl -Lso teleport-quickstart.yml https://raw.githubusercontent.com/gravitational/teleport/master/docker/teleport-quickstart.yml
      docker-compose -f teleport-quickstart.yml up
-
+     
      cd /opt
      sudo mkdir vscodeserver
      cd vscodeserver
      sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/vscodeserver/docker-compose.yaml -o docker-compose.yaml
      sudo docker-compose up -d
-
+     
      cd /opt
      sudo mkdir homeassistant
      cd homeassistant
      sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/homeassistant/docker-compose.yaml -o docker-compose.yaml
      sudo docker-compose up -d
-
+     
      cd /opt
      sudo mkdir noip && cd noip
      sudo wget https://github.com/Neill-H/Automate-Noip-DUC/archive/main.zip
