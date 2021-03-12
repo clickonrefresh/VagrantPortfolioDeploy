@@ -80,7 +80,7 @@ _______________________
 
 ``` cd /opt ```
 
-``` sudo mkdir /myproject ```
+``` sudo mkdir myproject ```
 
 ``` cd myproject ```
 
