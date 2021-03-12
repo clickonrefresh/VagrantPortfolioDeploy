@@ -14,14 +14,14 @@ sudo curl -O https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.d
 sudo apt install ./vagrant_2.2.9_x86_64.deb
 vagrant --version
 
-cd /myvagrant/vms/admin
+cd /vms/admin
 vagrant up
 vagrant ssh
 
-cd /myvagrant/vms/mainapps
+cd /vms/mainapps
 vagrant up
 vagrant ssh
 
-cd /myvagrant/vms/2ndapps
+cd /vms/2ndapps
 vagrant up
 vagrant ssh
