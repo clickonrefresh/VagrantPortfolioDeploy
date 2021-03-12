@@ -60,14 +60,14 @@
 
 -----------------------------------------------------------------------
 
+
 ### Highly extensible and customizable ###
 
 This script will download Vagrant, initiate 3 virtual machines each with a unique set of dockerized applications, as well as some Linux packaged apps.
 
 
-
+_______________________
 ### To run this script:
-________________________
 
 #### Dependencies first:
 
@@ -88,7 +88,7 @@ ________________________
 ``` sudo unzip main.zip ```
 
 ``` sudo bash VagrantHost/main.sh ```
--------------------------------------
+___________________________________
 
 
 ----------------------------------------------------------------------------------
@@ -121,5 +121,5 @@ ________________________
 
 ---------------------------------------------------------------------
 
-The easiest way to configure database and application password in the yaml files is to fork this project, and alter the configurations to your liking.
+##### The easiest way to configure database and application password in the yaml files is to fork this project, and alter the configurations to your liking.
 Alternatively you will need to alter the configurations after deploying and re-run the containers.
