@@ -17,11 +17,14 @@ vagrant --version
 cd vms/admin
 vagrant up
 vagrant ssh
+cd ..
 
-cd vms/mainapps
+
+cd mainapps
 vagrant up
 vagrant ssh
+cd ..
 
-cd vms/2ndapps
+cd 2ndapps
 vagrant up
 vagrant ssh
