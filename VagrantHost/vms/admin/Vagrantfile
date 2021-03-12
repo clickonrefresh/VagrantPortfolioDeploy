@@ -83,7 +83,7 @@
      cd /opt
      sudo mkdir nginxproxymanager
      cd nginxproxymanager
-     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/VagrantPortfolioDeploy/main/dockerconfigs/admin/nginxproxymanager/docker-compose.yaml -o docker-compose.yaml
+     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/nginxproxymanager/docker-compose.yaml -o docker-compose.yaml
      sudo docker-compose up -d
      cd ..
      sudo curl -L https://downloads.portainer.io/portainer-agent-stack.yml -o portainer-agent-stack.yml
