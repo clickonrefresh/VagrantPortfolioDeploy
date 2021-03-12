@@ -84,19 +84,23 @@ Vagrant.configure("2") do |config|
      cd /opt
      sudo mkdir dockers
      cd dockers
-     sudo apt-get install wget -y
-     sudo wget https://github.com/clickonrefresh/dockerboilers/archive/main.zip
-     sudo unzip main.zip
-
-     cd dockerboilers-main/odoo/
+     sudo mkdir odoo
+     cd odoo
+     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/odoo/docker-compose.yml -o docker-compose.yml
+     sudo mkdir config
+     cd config
+     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/odoo/config/odoo.conf -o odoo.conf
      sudo docker-compose up -d
      cd ..
-     cd dockerboilers-main
+     cd ..
+     sudo mkdir organizr
      cd organizr
+     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/organizr/docker-compose.yaml -o docker-compose.yaml
      sudo docker-compose up -d
      cd ..
-     cd dockerboilers-main/
+     sudo mkdir bookstack
      cd bookstack
+     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/bookstack/docker-compose.yaml -o docker-compose.yaml
      sudo docker-compose up -d
      cd ..
      sudo rm -r nginxproxymanager
