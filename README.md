@@ -1,5 +1,10 @@
 
-# !!! WARNING!!!!THIS SCRIPT IS IN TESTING PHASE !!! ** USE AT OWN RISK **
+## !!! WARNING!!!!THIS SCRIPT IS IN TESTING PHASE !!! ** USE AT OWN RISK **
+
+# The current configuration is working. Still testing and adding features.
+
+
+
 --------------------------------------------------------------
 # Disruptive Portfolio & Business Management Suite
 --------------------------------------------------------------
