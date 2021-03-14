@@ -84,14 +84,17 @@ Vagrant.configure("2") do |config|
      cd /opt
      sudo mkdir dockers
      cd dockers
+     
      sudo mkdir odoo
      cd odoo
-     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/odoo/docker-compose.yml -o docker-compose.yml
+     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/docker-templates/main/odoo/docker-compose.yml -o docker-compose.yml
      sudo mkdir config
      cd config
      sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/odoo/config/odoo.conf -o odoo.conf
+     cd ..
      sudo docker-compose up -d
      cd ..
+     
      cd ..
      sudo mkdir organizr
      cd organizr
