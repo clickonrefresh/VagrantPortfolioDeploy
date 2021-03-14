@@ -64,7 +64,7 @@
   # Enable provisioning with a shell script. Additional provisioners such as
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
-   config.vm.provision "file", source: "~/myvagrantprjects/DisruptivePortfolio-BusinessManagementSuite/VagrantHost/vms/admin/dockers/nginxproxymanager", destination: "~/dockers/nginxproxymanager"
+   config.vm.provision "file", source: "~/myvagrantprjects/DisruptivePortfolio-BusinessManagementSuite/VagrantHost/vms/admin/dockers/nginxproxymanager", destination: "~/docker/nginxproxymanager"
    config.vm.provision "shell", inline: <<-SHELL
      sudo apt-get update
      sudo apt-get upgrade -y
@@ -86,9 +86,9 @@
      sudo apt install cockpit -y
      
      cd /opt
-     cd dockers
+     cd docker
      cd nginxproxymanager
-     sudo cp -r ~/dockers/nginxproxymanager /opt/dockers/nginxproxymanager
+     sudo cp -r ~/docker/nginxproxymanager /opt/docker/nginxproxymanager
      sudo docker-compose up -d
      cd ..
      
@@ -100,7 +100,6 @@
      sudo mkdir noip && cd noip
      sudo wget https://github.com/Neill-H/Automate-Noip-DUC/archive/main.zip
      sudo unzip main.zip
-     sudo apt-get autoremove -y
      exit
    SHELL
 end
