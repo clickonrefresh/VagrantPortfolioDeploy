@@ -1,0 +1,32 @@
+version: '3'
+services:
+  web:
+    container_name: customname
+    image: odoo:14.0
+    depends_on:
+      - dbcustom
+    ports:
+      - 8936:8069
+    volumes:
+      - odoo-web-data:/var/lib/odoo
+      - ./config:/etc/odoo
+      - ./addons:/mnt/extra-addons
+    command: -c "cd /usr/lib/python3 && pip3 install pandas"
+    environment:
+      - HOST=dbcustom
+      - USER=odoocustom
+      - PASSWORD=myodoocustom
+      - APP_URL=custom
+    restart: always
+  dbcustom:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=myodoocustom
+      - POSTGRES_USER=odoocustom
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - odoo-db-data:/var/lib/postgresql/data/pgdata
+volumes:
+  odoo-web-data:
+  odoo-db-data:
