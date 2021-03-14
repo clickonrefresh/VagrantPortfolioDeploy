@@ -83,7 +83,15 @@ _______________________
 ### To run this script:
 
 ##### Some components of this project need to be configured manually.
-###### Download the Ohrms Core and Accounting Apps from Odoo Apps Store, and place the files in '~/Downloads/odoo/addons'
+
+###### Download:
+  -Ohrms Core(https://apps.odoo.com/apps/modules/14.0/ohrms_core/) and 
+  -Accounting Apps(https://apps.odoo.com/apps/modules/14.0/base_accounting_kit/) 
+  from Odoo Apps Store, and place the files in 
+  '~/Downloads/odoo/addons'
+
+*if the filenames change you will need to alter the file names in the vagrantfile and docker-compose files prior to deployment
+
 ###### Take care to name files correctly otherwise the script will fail. This is a feature I am working on improving
 
 #### Clone the repository into the specified location, if you change the path name '~/myvagrantprojects/portfolio' , you will need to also alter the Vagrantfile ##### config.vm.provision "file" source: "<path>" for 'mainapps' and '2ndapps'
@@ -112,8 +120,9 @@ _______________________
 
         OR
 
-``` bash main.sh
-________________________
+``` bash main.sh ```
+
+
 
 ----------------------------------------------------------------------------------
 #### The script will run, deploying virtualbox and vagrant, then initiate the virtual machines with their own unique set of install scripts:
@@ -157,7 +166,9 @@ Alternatively you will need to alter the configurations after deploying and re-r
 
 ```
 vagrant ssh
+
 cd /opt/noip/Automate-Noip-DUC-main
+
 sudo bash main.sh
 ```
 -------------------
