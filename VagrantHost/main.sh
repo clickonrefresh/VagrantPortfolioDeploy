@@ -10,8 +10,8 @@ sudo apt install curl -y
 
 sudo apt install virtualbox -y
 
-sudo curl -O https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.deb
-sudo apt install ./vagrant_2.2.9_x86_64.deb
+sudo curl -O https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
+sudo apt install ./vagrant_2.2.14_x86_64.deb
 vagrant --version
 
 cd vms/admin
