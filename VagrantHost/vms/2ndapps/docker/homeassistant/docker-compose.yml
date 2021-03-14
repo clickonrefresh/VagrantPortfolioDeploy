@@ -1,0 +1,16 @@
+---
+version: "2.1"
+services:
+  homeassistant:
+    image: ghcr.io/linuxserver/homeassistant
+    container_name: homeassistant
+    network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+      - /path/to/data:/config
+    devices:
+      - /path/to/device:/path/to/device
+    restart: unless-stopped
