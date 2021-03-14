@@ -64,7 +64,7 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
-   config.vm.provision "file" source: "~/Downloads/odoo/addons", destination: "~/dockers/odoo/addons"
+   config.vm.provision "file" source: "~/myvagrantprojects/DisruptivePortfolio-BusinessManagementSuite/VagrantHost/vms/mainapps/docker", destination: "~/docker"
    config.vm.provision "shell", inline: <<-SHELL
      apt-get update
      apt-get upgrade -y
@@ -73,6 +73,7 @@ Vagrant.configure("2") do |config|
      apt-get install curl -y
      apt-get install wget -y
      apt-get update
+     
      sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
      sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
      sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
@@ -83,32 +84,23 @@ Vagrant.configure("2") do |config|
 
      sudo apt-get update
      cd /opt
-     sudo mkdir dockers
-     cd dockers
+     cd docker
+     sudo cp -r ~/docker /opt/docker
      
-     sudo mkdir odoo
-     cd odoo
-     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/docker-templates/main/odoo/docker-compose.yml -o docker-compose.yml
-     sudo mkdir config
-     cd config
-     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/odoo/config/odoo.conf -o odoo.conf
-     cd ..
-     sudo docker-compose up -d
-     cd addons
-     sudo cp -r ~/dockers/odoo/addons /opt/dockers/odoo/addons
+     cd odoo/addons
      sudo unzip ohrms_core-14.0.1.0.0.zip
      sudo unzip base_accounting_kit-14.0.2.6.5.zip
      cd ..
-     
-     cd ..
-     sudo mkdir organizr
-     cd organizr
-     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/organizr/docker-compose.yaml -o docker-compose.yaml
      sudo docker-compose up -d
      cd ..
-     sudo mkdir bookstack
+     
+     cd ..
+     
+     cd organizr
+     sudo docker-compose up -d
+     cd ..
+     
      cd bookstack
-     sudo curl -L https://raw.githubusercontent.com/clickonrefresh/dockerboilers/main/bookstack/docker-compose.yaml -o docker-compose.yaml
      sudo docker-compose up -d
      cd ..
      
@@ -116,7 +108,7 @@ Vagrant.configure("2") do |config|
      sudo mkdir noip && cd noip
      sudo wget https://github.com/clickonrefresh/Automate-Noip-DUC/archive/main.zip
      sudo unzip main.zip
-     sudo apt-get autoremove
+     sudo apt-get autoremove -y
      exit
    SHELL
 end
