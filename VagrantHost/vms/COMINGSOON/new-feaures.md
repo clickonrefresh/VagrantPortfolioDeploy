@@ -9,3 +9,6 @@ ______________________________
   
   ### 4th VM
     - PfSense
+
+## Other Features:
+  - Ansible integration
