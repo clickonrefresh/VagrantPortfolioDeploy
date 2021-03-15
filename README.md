@@ -90,40 +90,66 @@ _______________________
   from Odoo Apps Store, and place the files in 
   '~/Downloads/odoo/addons'
 
-*if the filenames change you will need to alter the file names in the vagrantfile and docker-compose files prior to deployment
+
+
+
+*If the filenames change you will need to alter the file names in the vagrantfile and docker-compose files prior to deployment
 
 ###### Take care to name files correctly otherwise the script will fail. This is a feature I am working on improving
 
-#### Clone the repository into the specified location, if you change the path name '~/myvagrantprojects/portfolio' , you will need to also alter the Vagrantfile ##### config.vm.provision "file" source: "<path>" for 'mainapps' and '2ndapps'
 
-``` mkdir ~/myvagrantprojects/portfolio ```
 
-``` cd ~/myvagrantprojects/portfolio ```
 
-``` git clone https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite.git ```
+#### Clone the repository into the specified location, if you change the path name 
+     '~/myvagrantprojects/portfolio' ,
+#### you will need to also alter the Vagrantfile. 
+##### config.vm.provision "file" source: "<path>"
+  
+# Create a new directory to hold the project and clone the repo:
 
-#### Before executing the script, you will need to alter the teleport docker configuration files and add your FQDN at the following locations: DO NOT RENAME THE FILES, DO NOT MOVE THEM.
+` mkdir ~/myvagrantprojects `
 
-   DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/VagrantHost/vms/2ndapps/teleport/docker-compose.yml
-   DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/VagrantHost/vms/2ndapps/teleport/config/teleport.yml
+` cd ~/myvagrantprojects `
+
+` git clone https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite.git `
+
+#### Before executing the script:
+ 
+ ##### DO NOT RENAME THE FILES, DO NOT MOVE THEM.
+
+#### You will need to alter the user-names, passwords, and FQDN's in all of the 'docker-compose.yml' files to suit our needs. 
+ 
+##### All of the files needing editing are contained within the following directories within the project:
+
+  1. Admin Apps - DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/vms/admin/docker/
+  2. Main Apps - DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/vms/mainapps/docker/
+  3. 2nd Apps - DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/vms/2ndapps/docker/
+
+#### Once the files have been edited, and odoo addons been copied, navigate into "/VagrantHost/" and execute the script.
 
 
 ``` cd DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/ ```
 
 ``` chmod +x main.sh ```
 
-``` ./main.sh ```
+` ./main.sh ` 
          
-         OR
+        OR 
+ 
+` sh main.sh ` 
+ 
+        OR 
+ 
+` bash main.sh ` 
+ 
+ 
+ 
+ 
+ 
 
-``` sh main.sh ```
-
-        OR
-
-``` bash main.sh ```
-
-
-
+ 
+ 
+ 
 ----------------------------------------------------------------------------------
 #### The script will run, deploying virtualbox and vagrant, then initiate the virtual machines with their own unique set of install scripts:
 -----------------------------------------------------------------------------------
@@ -147,6 +173,13 @@ _______________________
                         - Teleport
                         - HomeAssistant
 
+
+
+
+
+
+
+
 ---------------------------------------------------------------------------------
  - Each 'VM' is deployed with fail2ban, docker and an un-executed script that I wrote for Noip.com DUC (https://github.com/clickonrefresh/Automate-Noip-DUC).
  
@@ -154,8 +187,17 @@ _______________________
 
 ---------------------------------------------------------------------
 
+
+
+
+
 ##### The easiest way to configure database and application password in the yaml files is to fork this project, and alter the configurations to your liking.
 Alternatively you will need to alter the configurations after deploying and re-run the containers.
+
+
+
+
+
 
 -------------------------------------
 
@@ -165,11 +207,13 @@ Alternatively you will need to alter the configurations after deploying and re-r
 ##### The noip script will be downloaded during this deployment, you will need to ssh into each machine individually and run their respective noip.com DUC scripts to configure your hostnames:
 
 ```
-vagrant ssh
+{
+  vagrant ssh
 
-cd /opt/noip/Automate-Noip-DUC-main
+  cd /opt/noip/Automate-Noip-DUC-main
 
-sudo bash main.sh
+  sudo bash main.sh
+}
 ```
 -------------------
 
