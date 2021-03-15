@@ -64,7 +64,9 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
-   config.vm.provision "file", source: "$HOME/myvagrantprojects/DisruptivePortfolio-BusinessManagementSuite/VagrantHost/vms/mainapps/docker/", destination: "$HOME/docker"
+   config.vm.synced_folder "./vms/mainapps/docker", "opt/" create: true
+ end
+   #config.vm.provision "file", source: "$HOME/myvagrantprojects/DisruptivePortfolio-BusinessManagementSuite/VagrantHost/vms/mainapps/docker/", destination: "$HOME/docker"
    config.vm.provision "shell", inline: <<-SHELL
      apt-get update
      apt-get upgrade -y
@@ -84,9 +86,9 @@ Vagrant.configure("2") do |config|
 
      sudo apt-get update
      cd /opt
-     sudo mkdir docker
+     
      cd docker
-     sudo cp -r $HOME/docker /opt/docker
+     
      
      cd odoo/addons
      sudo unzip ohrms_core-14.0.1.0.0.zip
