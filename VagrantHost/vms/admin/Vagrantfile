@@ -88,7 +88,7 @@
      cd /opt
      sudo mkdir docker
      cd docker
-     mkdir nginxproxymanager
+     sudo mkdir nginxproxymanager
      cd nginxproxymanager
      sudo cp -r $HOME/docker/nginxproxymanager/docker-compose.yml /opt/docker/nginxproxymanager/docker-compose.yml
      sudo docker-compose up -d
