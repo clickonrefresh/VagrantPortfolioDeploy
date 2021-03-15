@@ -64,7 +64,10 @@
   # Enable provisioning with a shell script. Additional provisioners such as
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
-   config.vm.provision "file", source: "$HOME/myvagrantprojects/DisruptivePortfolio-BusinessManagementSuite/VagrantHost/vms/admin/docker/nginxproxymanager/docker-compose.yml", destination: "$HOME/docker/nginxproxymanager/docker-compose.yml"
+   config.vm.synced_folder "./vms/admin/docker", "opt/" create: true
+ end
+   #config.vm.provision "file", source: "$HOME/myvagrantprojects/DisruptivePortfolio-BusinessManagementSuite/VagrantHost/vms/admin/docker/nginxproxymanager/docker-compose.yml", destination: "$HOME/docker/nginxproxymanager/docker-compose.yml"
+ #end
    config.vm.provision "shell", inline: <<-SHELL
      sudo apt-get update
      sudo apt-get upgrade -y
@@ -86,11 +89,11 @@
      sudo apt install cockpit -y
      
      cd /opt
-     sudo mkdir docker
+     # sudo mkdir docker
      cd docker
-     sudo mkdir nginxproxymanager
+     # sudo mkdir nginxproxymanager
      cd nginxproxymanager
-     sudo cp -r $HOME/docker/nginxproxymanager/docker-compose.yml /opt/docker/nginxproxymanager/docker-compose.yml
+     # sudo cp -r $HOME/docker/nginxproxymanager/docker-compose.yml /opt/docker/nginxproxymanager/docker-compose.yml
      sudo docker-compose up -d
      cd ..
      
