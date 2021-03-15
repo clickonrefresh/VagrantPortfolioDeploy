@@ -163,7 +163,8 @@ __This script will download Vagrant, initiate 3 virtual machines each with a uni
  
 
  * For post install configuration of teleport, please use this awesome guide:
- * [The Digital Life - Manage YOur SSH Servers](https://www.youtube.com/watch?v=nk1jfIAL5qE)
+ * [The Digital Life - Manage YOur SSH Servers](https://youtu.be/nk1jfIAL5qE?t=465)
+ * 'vagrant ssh' into the teleport machine, then follow the video guide at the stamp that is linked.
  
  
 ----------------------------------------------------------------------------------
