@@ -1,7 +1,7 @@
 
-## !!! WARNING!!!!THIS SCRIPT IS IN TESTING PHASE !!! ** USE AT OWN RISK **
+### !!! WARNING!!!!THIS SCRIPT IS IN TESTING PHASE !!! ** USE AT OWN RISK **
 
-# The current configuration is working. Still testing and adding features.
+### The current configuration is working. Still testing and adding features.
 
 
 
@@ -9,7 +9,7 @@
 # Disruptive Portfolio & Business Management Suite
 --------------------------------------------------------------
 
-
+---------------------------------------------------------------------------------------------------------------
 ## Automated deployment of a suite of self hosted, disruptive, browser based applications to manage a portfolio and/or business.
 ----------------------------------------------------------------------------------------------------------------
 
@@ -76,35 +76,42 @@
 
 ### Highly extensible and customizable ###
 
-This script will download Vagrant, initiate 3 virtual machines each with a unique set of dockerized applications, as well as some Linux packaged apps.
+__This script will download Vagrant, initiate 3 virtual machines each with a unique set of dockerized applications, as well as some Linux packaged apps__.
 
 
-_______________________
+--------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 ### To run this script:
 
 ##### Some components of this project need to be configured manually.
 
-###### Download:
-  -Ohrms Core(https://apps.odoo.com/apps/modules/14.0/ohrms_core/) and 
-  -Accounting Apps(https://apps.odoo.com/apps/modules/14.0/base_accounting_kit/) 
-  from Odoo Apps Store, and place the files in 
+###### For Odoo 3rd Party Apps download:
+  - [Ohrms Core](https://apps.odoo.com/apps/modules/14.0/ohrms_core/)  
+  - [Accounting Apps](https://apps.odoo.com/apps/modules/14.0/base_accounting_kit/)
+   
+##### From the Odoo Apps Store, and place the files in  newly created directory:
+
   '~/Downloads/odoo/addons'
 
+----------
+*adhere to this naming convention otherwise you will need to alter the entire script*
+
+###### Take care to name files correctly otherwise the script will fail. This is a feature I am working on improving.
+
+
+----------
+## ! Please adhere to the naming convention put forth.
+----------
 
 
 
-*If the filenames change you will need to alter the file names in the vagrantfile and docker-compose files prior to deployment
 
-###### Take care to name files correctly otherwise the script will fail. This is a feature I am working on improving
+-------
+##### if you change this name you will need to adjust various files including 
+      config.vm.provision "file" source: "<path>"
+      config.vm.provision "INLINE" shell
+-------  
 
-
-
-
-#### Clone the repository into the specified location, if you change the path name 
-     '~/myvagrantprojects/portfolio' ,
-#### you will need to also alter the Vagrantfile. 
-##### config.vm.provision "file" source: "<path>"
-  
 # Create a new directory to hold the project and clone the repo:
 
 ` mkdir ~/myvagrantprojects `
@@ -113,11 +120,14 @@ _______________________
 
 ` git clone https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite.git `
 
-#### Before executing the script:
- 
- ##### DO NOT RENAME THE FILES, DO NOT MOVE THEM.
 
-#### You will need to alter the user-names, passwords, and FQDN's in all of the 'docker-compose.yml' files to suit our needs. 
+
+### Before executing the script:
+ 
+##### DO NOT RENAME THE FILES, DO NOT MOVE THEM.
+
+
+### You will need to alter the user-names, passwords, and FQDN's in all of the 'docker-compose.yml' files to suit our needs. 
  
 ##### All of the files needing editing are contained within the following directories within the project:
 
@@ -125,13 +135,16 @@ _______________________
   2. Main Apps - DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/vms/mainapps/docker/
   3. 2nd Apps - DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/vms/2ndapps/docker/
 
-#### Once the files have been edited, and odoo addons been copied, navigate into "/VagrantHost/" and execute the script.
 
 
-``` cd DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/ ```
 
-``` chmod +x main.sh ```
+### Once the files have been edited, and odoo addons been copied, navigate into "/VagrantHost/" and execute the script.
 
+
+` cd DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/ `
+ 
+` chmod +x main.sh `
+ 
 ` ./main.sh ` 
          
         OR 
