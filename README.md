@@ -93,6 +93,8 @@ __This script will download Vagrant, initiate 3 virtual machines each with a uni
 
   '~/Downloads/odoo/addons'
 
+*Thescript will move the files to their correct locations afterward*
+
 ----------
 *adhere to this naming convention otherwise you will need to alter the entire script*
 
