@@ -15,6 +15,7 @@ sudo apt install ./vagrant_2.2.14_x86_64.deb
 vagrant --version
 
 vagrant plugin install vagrant-vbguest
+vagrant plugin update vagrant-vbguest
 
 cd vms/admin
 vagrant up

@@ -44,7 +44,7 @@
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  config.vm.synced_folder "./docker", "$HOME", create: true
+  config.vm.synced_folder "./docker", "/home/vagrant/", create: true
   
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -87,12 +87,8 @@
      sudo apt-get update
      
      sudo apt install cockpit -y
-     sudo cp -r ~/docker /opt
-     cd /opt
-     cd vms
-     cd admin
-     cd docker
-     
+     sudo cp -r home/vagrant/docker /opt/
+     cd /opt     
      cd nginxproxymanager
      # sudo cp -r $HOME/docker/nginxproxymanager/docker-compose.yml /opt/docker/nginxproxymanager/docker-compose.yml
      sudo docker-compose up -d
