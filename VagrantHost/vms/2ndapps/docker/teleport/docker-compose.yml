@@ -4,7 +4,7 @@ services:
     image: quay.io/gravitational/teleport:4.3
     container_name: teleport-configure
     entrypoint: /bin/sh
-    hostname: 
+    hostname: clickonssh.onthewifi.com
     command: -c "if [ ! -f /etc/teleport/teleport.yaml ]; then teleport configure > /etc/teleport/teleport.yaml; fi"
     volumes:
       - ./config:/etc/teleport
@@ -13,7 +13,7 @@ services:
     image: quay.io/gravitational/teleport:4.3
     container_name: teleport
     entrypoint: /bin/sh
-    hostname: 
+    hostname: clickonssh.onthewifi.com
     command: -c "sleep 1 && /bin/dumb-init teleport start -c /etc/teleport/teleport.yaml"
     ports:
       - "3023:3023"
