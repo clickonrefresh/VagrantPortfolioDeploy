@@ -87,13 +87,8 @@ Vagrant.configure("2") do |config|
      sudo chmod +x /usr/local/bin/docker-compose
 
      sudo apt-get update
-      
-     sudo cp -r /var/www/docker /opt/
-     cd /opt
-     
+     cd /vagrant
      cd docker
-     
-     
      cd odoo/addons
      sudo unzip ohrms_core-14.0.1.0.0.zip
      sudo unzip base_accounting_kit-14.0.2.6.5.zip
