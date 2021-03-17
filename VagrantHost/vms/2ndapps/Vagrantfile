@@ -82,17 +82,20 @@ Vagrant.configure("2") do |config|
      sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
      sudo chmod +x /usr/local/bin/docker-compose
       
-     cd /vagrant
+     cd /var
+     cd www
      cd docker
      cd vscodeserver
      sudo docker-compose up -d
 
-     cd /vagrant
+     cd /var
+     cd www
      cd docker
      cd homeassistant
      sudo docker-compose up -d
      
-     cd /vagrant
+     cd /var
+     cd www
      cd docker
      cd teleport
      sudo docker-compose up -d
