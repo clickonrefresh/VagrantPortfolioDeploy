@@ -55,7 +55,7 @@ Vagrant.configure("2") do |config|
   #   vb.gui = true
   #
   #   # Customize the amount of memory on the VM:
-     vb.memory = "1024"
+     vb.memory = "2048"
      vb.cpus = 1
    end
   #
@@ -86,16 +86,19 @@ Vagrant.configure("2") do |config|
      cd www
      cd vscodeserver
      sudo docker-compose up -d
+     sleep 20s
 
      cd /var
      cd www
      cd homeassistant
      sudo docker-compose up -d
-     
+     sleep 20s
+
      cd /var
      cd www
      cd teleport
      sudo docker-compose up -d
+     sleep 20s
      
      cd /opt
      sudo mkdir noip && cd noip
