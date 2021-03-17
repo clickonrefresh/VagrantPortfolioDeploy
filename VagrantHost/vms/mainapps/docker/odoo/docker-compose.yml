@@ -13,15 +13,17 @@ services:
       - ./addons:/mnt/extra-addons
     environment:
       - HOST=dbcustom
-      - USER=odoocustom
-      - PASSWORD=myodoocustom
+      - USER=clickonodoo
+      - PASSWORD=sgg-g40j0f-dkGGW#g-
       - APP_URL=custom
     restart: always
+    command: bash -c "cd /usr/lib/python3/dist-packages"
+    command: bash -c "pip3 install pandas"
   dbcustom:
     image: postgres:13
     environment:
       - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=myodoocustom
+      - POSTGRES_PASSWORD=sgg-g40j0f-dkGGW#g-
       - POSTGRES_USER=odoocustom
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
