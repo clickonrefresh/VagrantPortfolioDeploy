@@ -110,6 +110,10 @@ Vagrant.configure("2") do |config|
      sudo wget https://github.com/clickonrefresh/Automate-Noip-DUC/archive/main.zip
      sudo unzip main.zip
      sudo apt-get autoremove -y
+     
+     # Change 'customname' to the name that you gave the Odoo container
+     # sudo docker exec -u root -it customname /bin/bash
+     
      exit
    SHELL
 end
