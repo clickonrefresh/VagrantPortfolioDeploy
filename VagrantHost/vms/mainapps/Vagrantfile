@@ -44,7 +44,7 @@ Vagrant.configure("2") do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-   config.vm.synced_folder "./docker", "/opt/", :mount_options => ["dmode=777", "fmode=666"]
+   config.vm.synced_folder "./docker", "/var/www/", :mount_options => ["dmode=777", "fmode=666"]
    #  owner: "root", group: "root"
  
     # owner: "root", group: "root"
@@ -88,20 +88,20 @@ Vagrant.configure("2") do |config|
      sudo chmod +x /usr/local/bin/docker-compose
 
      sudo apt-get update
-     cd /opt
-     cd docker
+     cd /var
+     cd www
      cd odoo/addons
      sudo unzip ohrms_core-14.0.1.0.0.zip
      sudo unzip base_accounting_kit-14.0.2.6.5.zip
-     cd ..
      sudo docker-compose up -d
      
-     cd /opt
-     cd docker
+     cd /var
+     cd www
      cd organizr
      sudo docker-compose up -d
-     cd /opt
-     cd docker
+     
+     cd /var
+     cd www
      cd bookstack
      sudo docker-compose up -d
      
