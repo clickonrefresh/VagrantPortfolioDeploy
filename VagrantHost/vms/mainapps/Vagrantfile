@@ -44,7 +44,7 @@ Vagrant.configure("2") do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-   config.vm.synced_folder "./docker", "/var/www/", :mount_options => ["dmode=777", "fmode=666"]
+   config.vm.synced_folder "./docker", "/opt/", :mount_options => ["dmode=777", "fmode=666"]
    #  owner: "root", group: "root"
  
     # owner: "root", group: "root"
@@ -77,7 +77,8 @@ Vagrant.configure("2") do |config|
      apt-get install curl -y
      apt-get install wget -y
      apt-get update
-     
+     sudo usermod -aG sudo vagrant
+
      sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
      sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
      sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
@@ -87,26 +88,22 @@ Vagrant.configure("2") do |config|
      sudo chmod +x /usr/local/bin/docker-compose
 
      sudo apt-get update
-     cd /var
-     cd www
+     cd /opt
      cd docker
      cd odoo/addons
      sudo unzip ohrms_core-14.0.1.0.0.zip
      sudo unzip base_accounting_kit-14.0.2.6.5.zip
      cd ..
      sudo docker-compose up -d
-     cd ..
      
-     cd /var
-     cd www
+     cd /opt
      cd docker
      cd organizr
      sudo docker-compose up -d
-     cd ..
-     
+     cd /opt
+     cd docker
      cd bookstack
      sudo docker-compose up -d
-     cd ..
      
      cd /opt
      sudo mkdir noip && cd noip
