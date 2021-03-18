@@ -3,13 +3,13 @@ Vagrant.configure("2") do |config|
 
 
   # Every Vagrant development environment requires a box. 
-   config.vm.box = "ubuntu/bionic64"
+   config.vm.box = "ubuntu/bfocal64"
 
   # Create a public network
    config.vm.network "public_network", auto_config: false
 
   # Synced folder mapping
-   config.vm.synced_folder "./docker", "/home/vagrant/docker/", create: true
+   config.vm.synced_folder "./docker", "/home/ubuntu-focal/docker/", create: true
   
   # Resource provisioning
    config.vm.provider "virtualbox" do |vb|
