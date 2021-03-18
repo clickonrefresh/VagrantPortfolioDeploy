@@ -43,7 +43,7 @@
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  config.vm.synced_folder "./docker", "/var/www/", :mount_options => ["dmode=777", "fmode=666"]
+  config.vm.synced_folder "./docker", "/home/vagrant/docker/", :mount_options => ["dmode=777", "fmode=666"], create: true
   
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -86,7 +86,6 @@
      
      sudo usermod -aG sudo vagrant
      
-     sudo apt install cockpit -y
      sleep 20s
      cd /var
      cd www
@@ -96,6 +95,8 @@
      sleep 20s
      sudo docker volume create portainer_data
      sudo docker run -d -p 8023:8000 -p 9023:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+     
+     sudo apt install cockpit -y
      
      cd /opt
      sudo mkdir noip && cd noip
