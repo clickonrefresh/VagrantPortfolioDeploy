@@ -1,6 +1,6 @@
  Vagrant.configure("2") do |config|
 
-  config.vm.box = "ubuntu/bionic64"
+  config.vm.box = "ubuntu/focal64"
   # Network settings
   # config.vm.network "forwarded_port", guest: 80, host: 80
   # config.vm.network "forwarded_port", guest: 443, host: 443
@@ -8,7 +8,7 @@
 
  
   # Folder Syncing
-   config.vm.synced_folder "./docker", "/home/vagrant/docker/", create: true
+   config.vm.synced_folder "./docker", "/home/ubuntu-focal/docker/", create: true
   
   # Provider-specific configuration 
    config.vm.provider "virtualbox" do |vb|
