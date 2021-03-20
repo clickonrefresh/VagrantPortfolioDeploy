@@ -4,13 +4,8 @@
   # Network settings
   # config.vm.network "forwarded_port", guest: 80, host: 80
   # config.vm.network "forwarded_port", guest: 443, host: 443
-   config.vm.network "public_network", ip: "192.168.1.40",
-    nic_type: "bridged"
-   config.vm.network "public_network", bridge: "enp2s0: Wired"
-  
-   config.vm.provider :virtualbox do |vb|
-  vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
-end
+   config.vm.network "public_network", ip: "192.168.1.40"
+   
   # Folder Syncing
    config.vm.synced_folder "./docker", "/home/ubuntu-focal/docker/", create: true
   
