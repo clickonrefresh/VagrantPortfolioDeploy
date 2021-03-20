@@ -17,8 +17,7 @@ services:
       - PASSWORD=sgg-g40j0f-dkGGW#g-
       - APP_URL=custom
     restart: always
-    command: bash -c "cd /usr/lib/python3/dist-packages"
-    command: bash -c "pip3 install pandas"
+    command: bash -c "cd /usr/lib/python3/dist-packages && pip3 install pandas"
   dbcustom:
     image: postgres:13
     environment:
