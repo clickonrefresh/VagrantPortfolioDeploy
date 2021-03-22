@@ -81,8 +81,12 @@ __This script will download Vagrant, initiate 3 virtual machines each with a uni
 
 --------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------
-### To run this script:
-
+>?!
+>?! THIS STEP HAS BEEN AUTOMATED
+>?!
+>?!IF YOU WISH TO USE ALTERNATE APPS OR VERSIONS YOU WILL NEED TO DO THIS STEP
+>
+>
 ##### Some components of this project need to be configured manually.
 
 ###### For Odoo 3rd Party Apps download:
@@ -94,18 +98,18 @@ __This script will download Vagrant, initiate 3 virtual machines each with a uni
   'DisruptivePortfolio-BusinessManagemnetSuite/VagrantHost/vms/mainapps/docker/odoo/addons'
 
 *Thescript will move the files to their correct locations afterward*
-
+>?!
+>?!
+>?! 
+>?!
 ----------
-*adhere to this naming convention otherwise you will need to alter the script*
+_______________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________
 
 ##### Take care to name files correctly otherwise the script will fail. This is a feature I am working on improving.
 
-
-----------
-## ! Please adhere to the naming convention put forth
--------  
-
-
+_______________________________________________________________________________________________________________________________________
+# RUN THE SCRIPT
 
 
 # Create a new directory to hold the project and clone the repo:
@@ -120,11 +124,9 @@ __This script will download Vagrant, initiate 3 virtual machines each with a uni
 
 ### Before executing the script:
  
-##### DO NOT RENAME THE FILES, DO NOT MOVE THEM.
+##### DO NOT RENAME THE FILE NAMES, DO NOT MOVE THEM.
 
-
-### You will need to alter the user-names, passwords, and FQDN's, TimeZones, and volume paths <path/to/config>,  in all of the 'docker-compose.yml' files to suit ### your needs. 
- 
+#### You will need to alter the user-names, passwords, and FQDN's, TimeZones, and volume paths <path/to/config>,  in all of the 'docker-compose.yml' files to suit #### your needs. 
  
  
 ##### All of the files needing editing are contained within the following directories within the project:
