@@ -1,6 +1,8 @@
 ![GitHub](https://img.shields.io/github/license/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite?style=for-the-badge)
-![Twitter Follow](https://img.shields.io/twitter/follow/clickonrefresh?style=social)
-![GitHub commit checks state](https://img.shields.io/github/checks-status/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/issues/3?style=plastic)
+
+![Twitter Follow](https://img.shields.io/twitter/follow/clickonrefresh?style=social) 
+
+![GitHub commit checks state](https://img.shields.io/github/checks-status/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/issues/3?style=plastic) 
 
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/main?style=flat-square)
 
