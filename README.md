@@ -1,3 +1,5 @@
+!!! View the issues to see the current limitations of this deployment !!!
+
 --------------------------------------------------------------
 # Disruptive Portfolio & Business Management Suite
 --------------------------------------------------------------
