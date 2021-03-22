@@ -1,29 +1,28 @@
 version: '3'
 services:
   web:
-    container_name: customname
+    container_name: customname  # Name of container
     image: odoo:14.0
     depends_on:
-      - dbcustom
+      - dbcustom  # This must match all cases of dbcustom
     ports:
-      - 8936:8069
+      - 8936:8069 # Change the port and copy the template to run multiple instances of odoo
     volumes:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
     environment:
       - HOST=dbcustom
-      - USER=clickonodoo
-      - PASSWORD=sgg-g40j0f-dkGGW#g-
-      - APP_URL=custom
+      - USER=<customuser> # change 
+      - PASSWORD=<custompassword> # change
+      - APP_URL=<yourdomain.goes.here> # change 
     restart: always
-    command: bash -c "cd /usr/lib/python3/dist-packages/ && pip3 install pandas"
   dbcustom:
     image: postgres:13
     environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=sgg-g40j0f-dkGGW#g-
-      - POSTGRES_USER=odoocustom
+      - POSTGRES_DB=postgres  # dont touch this
+      - POSTGRES_PASSWORD=<custompassword>  # change
+      - POSTGRES_USER=<customuser>  # change
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
       - odoo-db-data:/var/lib/postgresql/data/pgdata
