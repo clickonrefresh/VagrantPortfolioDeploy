@@ -50,6 +50,13 @@ Although this base suite is customised for IT professionals, it can be tailored 
     - curl
     - zip
 
+----
+#COMING SOON: 
+
+    - Jellyfin
+    - Full stack React/Express/MongoDB app
+    - PfSense
+
 ------------------------------------------------------------------------
 
 #### Minimum System Requirements:
