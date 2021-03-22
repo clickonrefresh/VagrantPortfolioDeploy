@@ -1,8 +1,6 @@
 ![clickonrefresh Disruptive portfolio   business management suite](https://user-images.githubusercontent.com/72121107/111981707-b194f900-8b10-11eb-978c-eb6b790eb259.gif)
 
 
-!!! View the issues to see the current limitations of this deployment !!!
-
 --------------------------------------------------------------
 # Disruptive Portfolio & Business Management Suite
 --------------------------------------------------------------
@@ -85,6 +83,7 @@ __This script will download Vagrant, initiate 3 virtual machines each with a uni
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
+!!! View the [issues](https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/issues) to see the current limitations of this deployment !!!
 -------------------------------------------------------------------------------------------------------------------------------------
 >?!
 >?! THIS STEP HAS BEEN AUTOMATED
