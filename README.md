@@ -1,6 +1,7 @@
 ![GitHub](https://img.shields.io/github/license/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite?style=for-the-badge)
 
-![Twitter Follow](https://img.shields.io/twitter/follow/clickonrefresh?style=social) 
+
+![GitHub pull requests](https://img.shields.io/github/issues-pr/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite?style=plastic)
 
 ![GitHub issues](https://img.shields.io/github/issues/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite?style=for-the-badge)
 
@@ -8,6 +9,7 @@
 
 ![clickonrefresh Disruptive portfolio   business management suite](https://user-images.githubusercontent.com/72121107/111981707-b194f900-8b10-11eb-978c-eb6b790eb259.gif)
 
+![Twitter Follow](https://img.shields.io/twitter/follow/clickonrefresh?style=social) 
 
 --------------------------------------------------------------
 # Disruptive Portfolio & Business Management Suite
