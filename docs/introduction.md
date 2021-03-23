@@ -1,5 +1,5 @@
 ---
-description: Guide
+description: Intro
 ---
 
 # Introduction
