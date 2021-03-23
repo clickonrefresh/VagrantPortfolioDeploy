@@ -1,16 +1,10 @@
----
-version: "2.1"
+version: '3'
 services:
   homeassistant:
-    image: ghcr.io/linuxserver/homeassistant
     container_name: homeassistant
-    network_mode: host
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/London
+    image: homeassistant/home-assistant:stable
     volumes:
-      - /path/to/data:/config
-    devices:
-      - /path/to/device:/path/to/device
+      - /PATH_TO_YOUR_CONFIG:/config
+      - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
+    network_mode: host
