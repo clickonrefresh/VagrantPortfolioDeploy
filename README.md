@@ -1,19 +1,14 @@
-![GitHub](https://img.shields.io/github/license/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite?style=for-the-badge)
-
-
-![GitHub pull requests](https://img.shields.io/github/issues-pr/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite?style=plastic)
-
-![GitHub issues](https://img.shields.io/github/issues/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite?style=for-the-badge)
-
-![GitHub branch checks state](https://img.shields.io/github/checks-status/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/main?style=flat-square)
-
 ![clickonrefresh Disruptive portfolio   business management suite](https://user-images.githubusercontent.com/72121107/111981707-b194f900-8b10-11eb-978c-eb6b790eb259.gif)
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/clickonrefresh?style=social) 
 
 
-
-
+________________________________________________________________________________________________________________________________
+![GitHub](https://img.shields.io/github/license/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite?style=for-the-badge) 
+![GitHub pull requests](https://img.shields.io/github/issues-pr/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite?style=plastic)
+![GitHub issues](https://img.shields.io/github/issues/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite?style=for-the-badge)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/main?style=flat-square)
+_________________________________________________________________________________________________________________________________
 
 TO DO:
 add screenshots, and neaten up docs, make sure teleoprt works. then go public.
