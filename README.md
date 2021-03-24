@@ -10,21 +10,20 @@ ________________________________________________________________________________
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/main?style=flat-square)
 _________________________________________________________________________________________________________________________________
 
-TO DO:
-add screenshots, and neaten up docs, make sure teleoprt works. then go public.
+
 
 --------------------------------------------------------------
 # Disruptive Portfolio & Business Management Suite
 --------------------------------------------------------------
 
----------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------
 ## Automated deployment of a suite of self hosted, disruptive, browser based applications to manage a portfolio and/or business.
-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
 
 
-#### Suited for I.T. Proffessionals
-
-Although this base suite is customised for IT professionals, it can be tailored for any industry or individuals needs.
+##### Suited for I.T. Proffessionals
+    Although this base suite is customised for IT professionals, it can be tailored for any industry or individuals needs.
 
 
 ------------------------------------
@@ -65,6 +64,8 @@ Although this base suite is customised for IT professionals, it can be tailored 
     - curl
     - zip
 
+
+
 ----
 #COMING SOON: 
 
@@ -77,8 +78,8 @@ Although this base suite is customised for IT professionals, it can be tailored 
 #### Minimum System Requirements:
 
     - 4 vCPU
-    - 4 G Available RAM
-    - 60 G Available Storage Space
+    - 4 Gb Available RAM
+    - 60 Gb Available Storage Space
 
 #### Recommended System Requirements:
 
