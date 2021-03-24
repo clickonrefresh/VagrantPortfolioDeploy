@@ -29,7 +29,7 @@ sudo apt install cockpit -y
      
 cd /opt
 sudo mkdir noip && cd noip
-sudo wget https://github.com/Neill-H/Automate-Noip-DUC/archive/main.zip
+sudo wget https://github.com/clickonrefresh/Automate-Noip-DUC/archive/main.zip
 sudo unzip main.zip
      
 sudo apt autoremove -y 
