@@ -1,5 +1,5 @@
 
-[](https://user-images.githubusercontent.com/72121107/112363111-d1c5e300-8cdd-11eb-922f-cddfca353438.mp4)
+![](https://user-images.githubusercontent.com/72121107/112363111-d1c5e300-8cdd-11eb-922f-cddfca353438.mp4)
 
 
 ![](https://raw.githubusercontent.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/main/docs/.gitbook/assets/clickonrefresh-1-.gif)
