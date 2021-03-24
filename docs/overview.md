@@ -18,3 +18,9 @@ Bookstack provides an easy to use documentation application, with a modern UI. F
 
 ![](.gitbook/assets/screenshot_20210324_065728.png)
 
+## Your Website
+
+Odoo's website builder tool is great for quickly creating a stunning looking website. With tons of integrations such as your personal library of Unsplash images, and connection to your Odoo business/backend, allows you to run your own website and business at the same time, from the same place.
+
+
+
