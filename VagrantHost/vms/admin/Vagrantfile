@@ -4,7 +4,7 @@
   # Network settings
   # config.vm.network "forwarded_port", guest: 80, host: 80
   # config.vm.network "forwarded_port", guest: 443, host: 443
-   config.vm.network "public_network", ip: "192.168.1.40"
+   config.vm.network "public_network", ip: "192.168.100.10"
    
   # Folder Syncing
    config.vm.synced_folder "./docker", "/home/ubuntu-focal/docker/", create: true
