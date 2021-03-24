@@ -1,7 +1,4 @@
 
-![](https://user-images.githubusercontent.com/72121107/112363111-d1c5e300-8cdd-11eb-922f-cddfca353438.mp4)
-
-
 ![](https://raw.githubusercontent.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/main/docs/.gitbook/assets/clickonrefresh-1-.gif)
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/clickonrefresh?style=social) 
@@ -38,15 +35,15 @@ This script will download Vagrant, initiate 3 VirtualBox virtual machines each w
 _____________________________________________________________________________________________________________________________________________
 #### For Official Documentation:
 
- - ![Github - Disruptive Portfolio-Business Management Suite Documentation](https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/tree/main/docs)
+ - [Github - Disruptive Portfolio-Business Management Suite Documentation](https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/tree/main/docs)
  - [GitBook Disruptive Portfolio-Business Management Suite Documentation](https://clickonrefresh.gitbook.io/disruptive-portfolio-and-business-management-suite/)
 
 
 
 #### View exapmles of this project:
 
- - ![Clickonrefresh' Dashboard](https://clickondashboard.onthewifi.com)
- - ![Clickonrefresh' Portfolio](https://clickonrefresh.onthewifi.com)
+ - [Clickonrefresh' Dashboard](https://clickondashboard.onthewifi.com)
+ - [Clickonrefresh' Portfolio](https://clickonrefresh.onthewifi.com)
 
 
 _____________________________________________________________________________________________________________________________________________
