@@ -13,7 +13,7 @@ services:
       - SUDO_PASSWORD_HASH= #optional
       - PROXY_DOMAIN= #optional
     volumes:
-      - /var/www/vscode:/config
+      - ./vscode/config:/config
     ports:
       - 8453:8443
     restart: unless-stopped
