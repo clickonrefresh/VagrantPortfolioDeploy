@@ -1,6 +1,6 @@
 
+![clickonrefresh(1)](https://user-images.githubusercontent.com/72121107/112297926-1d0cd100-8c9f-11eb-85fa-6ddaa6223167.png)
 
-(https://user-images.githubusercontent.com/72121107/112297622-c901ec80-8c9e-11eb-808b-cf065b9f9d82.mp4)
 
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/clickonrefresh?style=social) 
