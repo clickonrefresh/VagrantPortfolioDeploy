@@ -24,3 +24,7 @@ Odoo's website builder tool is great for quickly creating a stunning looking web
 
 ![](.gitbook/assets/screenshot_20210324_083849.png)
 
+With hundreds of official and 3rd party modules to choose from.
+
+![](.gitbook/assets/screenshot_20210324_085511.png)
+
