@@ -8,7 +8,7 @@ description: Intro
 
 With a self hosted option, you take complete control of the customization of your portfolio applications, deployment and security. While this can seem like a daunting task, this guide will provide a thorough description of how this is accomplished.
 
-**This tutorial shows you how to deploy and configure various Productivity & Knowledge Base Applications with built-in tools for E-Commerce, CRM, ERP, MRP and more to manage your Portfolio using Docker, deployed on an Ubuntu Server 20.04LTS Hyper-V Virtual Machine.**
+**This tutorial shows you how to deploy and configure various Productivity & Knowledge Base Applications with built-in tools for E-Commerce, CRM, ERP, MRP and more to manage your Portfolio using Docker, deployed on an Ubuntu Server 20.04LTS VirtualBox Virtual Machine.**
 
 ## _**Technolgies Involved**_
 
