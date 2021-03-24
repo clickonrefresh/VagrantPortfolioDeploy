@@ -56,7 +56,7 @@ ________________________________________________________________________________
       - Nginx Proxy Manager - Proxy Host, Redirects & SSL in a GUI
       - Portainer - Container Management with a GUI
       - Teleport - SSH Server Managemnt
-      - Cockpit - An Admin GUI for Linux
+      - Cockpit - A Linux Server Web GUI
 
 
    ### Productivity Apps
