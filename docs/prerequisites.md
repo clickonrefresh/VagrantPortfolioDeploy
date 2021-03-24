@@ -1,5 +1,21 @@
 # Prerequisites
 
+## Configuration Requirements
+
+### Docker-Compose
+
+Before running the script for the project, it is highly recommended to change the user and password details for each applications' docker-compose.yml files.
+
+Add your domain name URL if the docker-compose file calls for it.
+
+For post install configuration of Teleport, please use this awesome guide:
+
+* [The Digital Life - Manage YOur SSH Servers](https://youtu.be/nk1jfIAL5qE?t=465)
+
+then, 'vagrant ssh' into the teleport machine, follow the video guide at the stamp that is linked.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 ## System Requirements
 
 ### Minimum System Requirements:
