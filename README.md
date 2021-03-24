@@ -1,7 +1,4 @@
 
-
-![clickonrefresh(1)](https://user-images.githubusercontent.com/72121107/112297926-1d0cd100-8c9f-11eb-85fa-6ddaa6223167.png)
-
 ![](https://raw.githubusercontent.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/main/docs/.gitbook/assets/clickonrefresh-1-.gif)
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/clickonrefresh?style=social) 
