@@ -6,7 +6,7 @@ description: Summary
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/clickonrefresh?style=social)
 
-![](.gitbook/assets/clickonrefresh-1-.mp4)
+![](.gitbook/assets/clickonrefresh-1-.gif)
 
 ### A curated collection of browser based applications to help you manage your portfolio, and business.
 
