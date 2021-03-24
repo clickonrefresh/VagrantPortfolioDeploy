@@ -30,14 +30,22 @@ The base set of applications contains tools for software development and devops,
 
 Highly customizable, the application suite can be modified or extended upon easily.
 
-This script will download Vagrant, initiate 3 VirtualBox virtual machines each with a unique set of Dockerized applications, as well as some Linux packaged appslications.
+This script will download Vagrant, initiate 3 VirtualBox virtual machines each with a unique set of Dockerized applications, as well as some Linux packaged applications.
 
 
 
 _____________________________________________________________________________________________________________________________________________
-For Official Documentation:
- - Github - https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/tree/main/docs
- - GitBook - https://clickonrefresh.gitbook.io/disruptive-portfolio-and-business-management-suite/
+#### For Official Documentation:
+
+ - ![Github - Disruptive Portfolio-Business Management Suite Documentation](https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/tree/main/docs)
+ - ![GitBook Disruptive Portfolio-Business Management Suite Documentation](https://clickonrefresh.gitbook.io/disruptive-portfolio-and-business-management-suite/)
+
+
+
+#### View exapmles of this project:
+
+ - ![Clickonrefresh' Dashboard](https://clickondashboard.onthewifi.com)
+ - ![Clickonrefresh' Portfolio](https://clickonrefresh.onthewifi.com)
 
 
 _____________________________________________________________________________________________________________________________________________
@@ -45,7 +53,7 @@ ________________________________________________________________________________
 
 ## Dockerized & Packaged Browser-Based Apps Included:
   
-   #### Admin Apps
+   ### Admin Apps
  
       - Nginx Proxy Manager - Proxy Host, Redirects & SSL in a GUI
       - Portainer - Container Management with a GUI
@@ -53,19 +61,19 @@ ________________________________________________________________________________
       - Cockpit - An Admin GUI for Linux
 
 
-   #### Productivity Apps
+   ### Productivity Apps
   
       - Odoo Community Edition - An Open Sourced ERP | CRM | MRP | Accounting | Business Management | E-Commerce | Website Builder | Integrated | Customisable
       - Visual Studio Code - Arguably the best browser based code editor / IDE
       - Organizr - An Application and Favourites Dashboard, easily keep track of all your links, servers and projects.
       - Bookstack - Self Hosted Knowledge Base
 
-   #### Extras
+   ### Extras
    
       - Homeassistant - Home Automation
 
 
-## Packaged Applications:
+#### Packaged Applications:
 
     - Fail2ban
     - Noip.com Dynamic Update Client
@@ -81,7 +89,7 @@ ________________________________________________________________________________
 
 -------
 
-## COMING SOON: 
+### COMING SOON: 
 
     - Jellyfin
     - Full stack React/Express/MongoDB app
