@@ -27,23 +27,31 @@ The base set of applications contains tools for software development and devops,
 
 Highly customizable, the application suite can be modified or extended upon easily.
 
+This script will download Vagrant, initiate 3 VirtualBox virtual machines each with a unique set of Dockerized applications, as well as some Linux packaged appslications.
+__________________________________________________________________________________________________________
 __________________________________________________________________________________________________________
 
-This script will download Vagrant, initiate 3 VirtualBox virtual machines each with a unique set of Dockerized applications, as well as some Linux packaged appslications.
-To run the script:
+# To run the script:
 
-Create a new directory and clone the Github repository.
+### Create a new directory and clone the Github repository.
 
+```
 mkdir myprojects
+
 cd myprojects
+
 git clone https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite.git
+```
 
-Navigate into the project folder, then execute the script.
+### Navigate into the project folder, then execute the script.
 
+```
 cd DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/
-chmod +x main.sh
-./main.sh
 
+chmod +x main.sh
+
+./main.sh
+```
 _____________________________________________________________________________________________________________________________________________
 _____________________________________________________________________________________________________________________________________________
 _____________________________________________________________________________________________________________________________________________
@@ -100,10 +108,10 @@ ________________________________________________________________________________
     - Jellyfin
     - Full stack React/Express/MongoDB app
     - PfSense
+_____________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________
 
-------------------------------------------------------------------------
-_____________________________________________________________________________________________________________________________________________
-_____________________________________________________________________________________________________________________________________________
+# System Requirements
 
 #### Minimum System Requirements:
 
@@ -117,7 +125,8 @@ ________________________________________________________________________________
     - 8 G Available RAM
     - 100 G Available Storage Space
 
------------------------------------------------------------------------
+_____________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________
 
 
 ### Highly extensible and customizable ###
@@ -131,14 +140,7 @@ __This script will download Vagrant, initiate 3 virtual machines each with a uni
   2. Main Apps - DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/vms/mainapps/docker/
   3. 2nd Apps - DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/vms/2ndapps/docker/
 
- 
- 
 
- * For post install configuration of teleport, please use this awesome guide:
- * [The Digital Life - Manage YOur SSH Servers](https://youtu.be/nk1jfIAL5qE?t=465)
- * 'vagrant ssh' into the teleport machine, then follow the video guide at the stamp that is linked.
- 
- 
 ----------------------------------------------------------------------------------
 #### The script will run, deploying virtualbox and vagrant, then initiate the virtual machines with their own unique set of install scripts:
 -----------------------------------------------------------------------------------
@@ -165,16 +167,21 @@ __This script will download Vagrant, initiate 3 virtual machines each with a uni
 _____________________________________________________________________________________________________________________________________________
 _____________________________________________________________________________________________________________________________________________
 
+# Post Installation Setup
 
+#### The easiest way to configure database and application password in the yaml files is to clone this project, and alter the configurations to your liking before running the script.
 
+#### Alternatively you will need to alter the configurations after deploying and re-run the containers.
 
-##### The easiest way to configure database and application password in the yaml files is to clone this project, and alter the configurations to your liking before running the script.
-Alternatively you will need to alter the configurations after deploying and re-run the containers.
+### Teleport
+ * Please use this awesome guide to help you finish configuring teleport
+ * [The Digital Life - Manage YOur SSH Servers](https://youtu.be/nk1jfIAL5qE?t=465)
+ * 'vagrant ssh' into the teleport machine, then follow the video guide at the stamp that is linked.
+ 
+ 
 
-
-
-
--------------------------------------
+_____________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________
 
 
 ### You will need 9 Domain Names / Sub-Domain Names if you wish to access all of your apps over SSL
@@ -190,7 +197,10 @@ Alternatively you will need to alter the configurations after deploying and re-r
   sudo bash main.sh
 }
 ```
--------------------
+_____________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________
+
+
 
 ## I am looking for people to help contribute towards the documentation and development of this project.
 ### If you are interested please email me @ clickonrefresh@gmail.com
