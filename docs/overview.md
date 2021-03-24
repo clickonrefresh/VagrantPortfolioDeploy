@@ -1,8 +1,20 @@
+---
+description: The project as a whole
+---
+
 # Overview
 
-## The Dashboard
+## Your Dashboard
 
-Keep all your server applications, browser links & favourites saved in 1 dashboard, so you can easily keep track of your work.
+Keep all your server applications, browser links & favourites saved in 1 dashboard with 'Organizr', so you can easily keep track of your work. Set and allow tabs for visitors, and tabs for internal users.
 
-Insert Dashboard screenshot
+![](.gitbook/assets/screenshot_20210324_080310.png)
+
+
+
+## Your Documentation
+
+Bookstack provides an easy to use documentation application, with a modern UI. Featuring WYSIWYG and Markdown editors.
+
+![](.gitbook/assets/screenshot_20210324_065728.png)
 
