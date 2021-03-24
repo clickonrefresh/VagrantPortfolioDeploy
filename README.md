@@ -21,8 +21,36 @@ ________________________________________________________________________________
 ## Automated deployment of a suite of self hosted, disruptive, browser based applications to manage a portfolio and/or business.
 --------------------------------------------------------------------------------------------------------------------------------
 
+A curated collection of browser based applications to help you manage your portfolio, and business.
 
-##### Suited for I.T. Proffessionals
+The base set of applications contains tools for software development and devops, as well as applications to help you run and manage your business.
+
+Highly customizable, the application suite can be modified or extended upon easily.
+
+__________________________________________________________________________________________________________
+
+This script will download Vagrant, initiate 3 VirtualBox virtual machines each with a unique set of Dockerized applications, as well as some Linux packaged appslications.
+To run the script:
+
+Create a new directory and clone the Github repository.
+
+mkdir myprojects
+cd myprojects
+git clone https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite.git
+
+Navigate into the project folder, then execute the script.
+
+cd DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/
+chmod +x main.sh
+./main.sh
+
+_____________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________
+ 
+
+ ##### Suited for I.T. Proffessionals
     Although this base suite is customised for IT professionals, it can be tailored for any industry or individuals needs.
 
 
@@ -74,6 +102,8 @@ ________________________________________________________________________________
     - PfSense
 
 ------------------------------------------------------------------------
+_____________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________
 
 #### Minimum System Requirements:
 
@@ -94,57 +124,6 @@ ________________________________________________________________________________
 
 __This script will download Vagrant, initiate 3 virtual machines each with a unique set of dockerized applications, as well as some Linux packaged apps__.
 
-
---------------------------------------------------------------------------------------------------------------------------------------
-!!! View the [issues](https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite/issues) to see the current limitations of this deployment !!!
--------------------------------------------------------------------------------------------------------------------------------------
->?!
->?! THIS STEP HAS BEEN AUTOMATED
->?!
->?!IF YOU WISH TO USE ALTERNATE APPS OR VERSIONS YOU WILL NEED TO DO THIS STEP
->
->
-##### Some components of this project need to be configured manually.
-
-###### For Odoo 3rd Party Apps download:
-  - [Ohrms Core](https://apps.odoo.com/apps/modules/14.0/ohrms_core/)  
-  - [Accounting Apps](https://apps.odoo.com/apps/modules/14.0/base_accounting_kit/)
-   
-##### From the Odoo Apps Store, and place the files in the following directory:
-
-  'DisruptivePortfolio-BusinessManagemnetSuite/VagrantHost/vms/mainapps/docker/odoo/addons'
-
-*Thescript will move the files to their correct locations afterward*
->?!
->?!
->?! 
->?!
-----------
-_______________________________________________________________________________________________________________________________________
-_______________________________________________________________________________________________________________________________________
-
-##### Take care to name files correctly otherwise the script will fail. This is a feature I am working on improving.
-
-_______________________________________________________________________________________________________________________________________
-# RUN THE SCRIPT
-
-
-# Create a new directory to hold the project and clone the repo:
-
-` mkdir ~/myvagrantprojects `
-
-` cd ~/myvagrantprojects `
-
-` git clone https://github.com/clickonrefresh/DisruptivePortfolio-BusinessManagementSuite.git `
-
-
-
-### Before executing the script:
- 
-##### DO NOT RENAME THE FILE NAMES, DO NOT MOVE THEM.
-
-#### You will need to alter the user-names, passwords, and FQDN's, TimeZones, and volume paths <path/to/config>,  in all of the 'docker-compose.yml' files to suit #### your needs. 
- 
  
 ##### All of the files needing editing are contained within the following directories within the project:
 
@@ -152,28 +131,6 @@ ________________________________________________________________________________
   2. Main Apps - DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/vms/mainapps/docker/
   3. 2nd Apps - DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/vms/2ndapps/docker/
 
-
-
-
-### Once the files have been edited, and odoo addons been copied, navigate into "/VagrantHost/" and execute the script.
-
-
-` cd DisruptivePortfolio-BusinessManagementSuite-main/VagrantHost/ `
- 
-` chmod +x main.sh `
- 
-` ./main.sh ` 
-         
-        OR 
- 
-` sh main.sh ` 
- 
-        OR 
- 
-` bash main.sh ` 
- 
- 
- 
  
  
 
@@ -205,28 +162,14 @@ ________________________________________________________________________________
                         - Teleport
                         - HomeAssistant
 
+_____________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________
 
 
 
 
-
-
-
----------------------------------------------------------------------------------
- - Each 'VM' is deployed with fail2ban, docker and an un-executed script that I wrote for Noip.com DUC (https://github.com/clickonrefresh/Automate-Noip-DUC).
- 
- - Portainer is deployed to manage the entire docker swarm.
-
----------------------------------------------------------------------
-
-
-
-
-
-##### The easiest way to configure database and application password in the yaml files is to fork this project, and alter the configurations to your liking.
+##### The easiest way to configure database and application password in the yaml files is to clone this project, and alter the configurations to your liking before running the script.
 Alternatively you will need to alter the configurations after deploying and re-run the containers.
-
-
 
 
 
