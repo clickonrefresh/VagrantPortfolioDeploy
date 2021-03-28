@@ -19,7 +19,6 @@ vagrant plugin update vagrant-vbguest
 
 cd vms/admin
 vagrant up
-vagrant ssh
 cd ..
 
 
